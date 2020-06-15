@@ -19,6 +19,7 @@
     ],
     "main": "./extension.js",
     "dependencies": {
+        "@fohlen/github-release-downloader": "^1.0.0",
         "vsce": "^1.75.0",
         "vscode-languageclient": "^5.2.1"
     },
@@ -33,7 +34,10 @@
             "title": "igpop LSP",
             "properties": {
                 "igpoplsp.path": {
-                    "type": ["string", "null"],
+                    "type": [
+                        "string",
+                        "null"
+                    ],
                     "default": null,
                     "description": "Path to igpop executable. Default null"
                 }
